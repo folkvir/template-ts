@@ -3,6 +3,6 @@
  * @param name
  * @return Hello my-friend salutations !
  */
-export function hello (name: string) : string {
+export function hello (name: string): string {
   return `Hello ${name} !`
 }

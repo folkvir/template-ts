@@ -5,25 +5,22 @@
   "author": "Folkvir",
   "license": "MIT",
   "scripts": {
+    "pretest": "yarn lint && yarn build && yarn docs",
+    "test": "echo 'No test for the moment...'",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "lint": "ts-standard lib/**/*",
+    "lint": "tslint --project ./tsconfig.json lib/**/*",
     "example": "node ./example/example",
     "docs": "typedoc --out docs lib/"
   },
   "devDependencies": {
+    "tslint": "^6.1.3",
+    "tslint-config-standard": "^9.0.0",
     "typedoc": "^0.19.0",
     "typescript": "^4.0.2"
   },
-  "dependencies": {
-    "ts-standard": "^9.0.0"
-  },
-  "ts-standard": {
-    "ignore": [
-      "bin/",
-      "lib/**/*.js",
-      "docs/"
-    ]
-  },
-  "engines" : { "node" : ">= 12" }
+  "dependencies": {},
+  "engines": {
+    "node": ">= 12"
+  }
 }

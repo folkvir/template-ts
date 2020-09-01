@@ -1,10 +1,3 @@
 {
-  "javascript.validate.enable": false,
-  "standard.enable": true,
-  "standard.run": "onSave",
-  "standard.validate": [
-    "javascript",
-    "typescript"
-  ],
-  "standard.autoFixOnSave": true
+  "javascript.validate.enable": false
 }
