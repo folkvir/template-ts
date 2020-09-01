@@ -1,0 +1,29 @@
+{
+  "name": "template-project-ts",
+  "version": "0.0.0",
+  "main": "bin/index.js",
+  "author": "Folkvir",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "ts-standard lib/**/*",
+    "example": "node ./example/example",
+    "docs": "typedoc --out docs lib/"
+  },
+  "devDependencies": {
+    "typedoc": "^0.19.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "ts-standard": "^9.0.0"
+  },
+  "ts-standard": {
+    "ignore": [
+      "bin/",
+      "lib/**/*.js",
+      "docs/"
+    ]
+  },
+  "engines" : { "node" : ">= 12" }
+}
