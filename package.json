@@ -1,5 +1,5 @@
 {
-  "name": "template-project-ts",
+  "name": "template-ts",
   "version": "0.0.0",
   "main": "bin/index.js",
   "author": "Folkvir",
@@ -10,6 +10,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "lint": "tslint --project ./tsconfig.json lib/**/*",
+    "lint:fix": "yarn lint --fix",
     "example": "node ./example/example",
     "docs": "typedoc --out docs lib/"
   },

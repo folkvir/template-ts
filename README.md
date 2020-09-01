@@ -1,7 +1,9 @@
-# Template project for Typescript
+# Template project for Typescript/TSLint/TypeDoc
+
+**For node 12+**
 
 Added with:
-* Use vscode as editor
+* Use VSCode as editor and TSLint 
 * Use `yarn` as package manager
 * Typescript source folder in `./lib`
 * A linter using TSLint with Standard style guidelines: `yarn lint`
