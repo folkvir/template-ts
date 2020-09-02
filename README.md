@@ -1,3 +1,4 @@
+![Node.js CI](https://github.com/folkvir/template-ts/workflows/Node.js%20CI/badge.svg?branch=master)
 # Template project for Typescript/TSLint/TypeDoc
 
 **For node 12+**
