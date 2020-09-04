@@ -1,7 +1,7 @@
 {
   "name": "template-ts",
   "version": "0.0.0",
-  "main": "bin/index.js",
+  "main": "build/index.js",
   "author": "Folkvir",
   "license": "MIT",
   "scripts": {
@@ -10,10 +10,10 @@
     "jest": "jest",
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "lint": "tslint --project ./tsconfig.json lib/**/*",
+    "lint": "tslint --project ./tsconfig.json src/**/*",
     "lint:fix": "yarn lint --fix",
     "example": "node ./example/example",
-    "docs": "typedoc --out docs lib/"
+    "docs": "typedoc --out docs src/"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
