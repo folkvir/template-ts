@@ -5,8 +5,9 @@
   "author": "Folkvir",
   "license": "MIT",
   "scripts": {
-    "pretest": "yarn lint && yarn build && yarn docs",
+    "pretest": "yarn lint && yarn build",
     "test": "jest",
+    "posttest": "yarn docs",
     "jest": "jest",
     "build": "tsc",
     "build:watch": "tsc --watch",
